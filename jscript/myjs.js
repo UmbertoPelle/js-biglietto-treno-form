@@ -15,17 +15,19 @@ btnCrea.addEventListener("click", function () {
   if (genere == "minorenne") {
     bigliettoScontato = ((prezzoBiglietto * 80)/ 100);
     document.getElementById('prezzo').innerHTML = bigliettoScontato.toFixed(2) + "€";
+    document.getElementById('categoria').innerHTML = genere;
   }else if (genere == "over65") {
     bigliettoScontato = ((prezzoBiglietto * 60)/ 100);
     document.getElementById('prezzo').innerHTML = bigliettoScontato.toFixed(2) + "€";
+    document.getElementById('categoria').innerHTML = genere;
   }else {
     document.getElementById('prezzo').innerHTML = prezzoBiglietto.toFixed(2) + "€";
+    document.getElementById('categoria').innerHTML = genere;
   }
 
   var carrozza = Math.floor(Math.random()*10)+ 1;
   var numTreno = Math.floor(Math.random() * (1000 - 700) + 700);
   document.getElementById('outPutNome').innerHTML = name;
-  document.getElementById('categoria').innerHTML = genere;
   document.getElementById('carrozza').innerHTML = carrozza;
   document.getElementById('treno').innerHTML = numTreno;
 
@@ -35,7 +37,6 @@ btnCrea.addEventListener("click", function () {
 btnAnnulla.addEventListener("click", function () {
 
   document.getElementById('output').className = "hidden";
-
   document.getElementById('name').value = "";
   document.getElementById('km').value = "";
   document.getElementById('genere').value = "maggiorenne";
