@@ -12,11 +12,11 @@ btnCrea.addEventListener("click", function () {
   km = document.getElementById('km').value;
   prezzoBiglietto = km * 0.21;
 
-  if (genere == "minorenne") {
+  if (genere == "Minorenne") {
     bigliettoScontato = ((prezzoBiglietto * 80)/ 100);
     document.getElementById('prezzo').innerHTML = bigliettoScontato.toFixed(2) + "€";
     document.getElementById('categoria').innerHTML = genere;
-  }else if (genere == "over65") {
+  }else if (genere == "Over65") {
     bigliettoScontato = ((prezzoBiglietto * 60)/ 100);
     document.getElementById('prezzo').innerHTML = bigliettoScontato.toFixed(2) + "€";
     document.getElementById('categoria').innerHTML = genere;
