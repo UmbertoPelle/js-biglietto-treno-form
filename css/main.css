@@ -2,6 +2,27 @@ body{
   background-color: lightblue;
 }
 
+div button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+div button:hover{
+  background-color: green;
+  color: #fff;
+  transition: 0.5s;
+}
+
+div label{
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+}
+
 #output{
   width: 70%;
   margin: auto;

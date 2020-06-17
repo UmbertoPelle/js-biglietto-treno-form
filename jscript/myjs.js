@@ -6,6 +6,7 @@ var bigliettoScontato;
 var btnCrea = document.getElementById('creaBiglietto');
 var btnAnnulla = document.getElementById('annulla');
 
+
 btnCrea.addEventListener("click", function () {
   var genere = document.getElementById('genere').value;
   name = document.getElementById('name').value;
