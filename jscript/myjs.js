@@ -15,18 +15,16 @@ btnCrea.addEventListener("click", function () {
   if (genere == "Minorenne") {
     bigliettoScontato = ((prezzoBiglietto * 80)/ 100);
     document.getElementById('prezzo').innerHTML = bigliettoScontato.toFixed(2) + "€";
-    document.getElementById('categoria').innerHTML = genere;
   }else if (genere == "Over65") {
     bigliettoScontato = ((prezzoBiglietto * 60)/ 100);
     document.getElementById('prezzo').innerHTML = bigliettoScontato.toFixed(2) + "€";
-    document.getElementById('categoria').innerHTML = genere;
   }else {
     document.getElementById('prezzo').innerHTML = prezzoBiglietto.toFixed(2) + "€";
-    document.getElementById('categoria').innerHTML = genere;
   }
 
   var carrozza = Math.floor(Math.random()*10)+ 1;
   var numTreno = Math.floor(Math.random() * (1000 - 700) + 700);
+  document.getElementById('categoria').innerHTML = genere;
   document.getElementById('outPutNome').innerHTML = name;
   document.getElementById('carrozza').innerHTML = carrozza;
   document.getElementById('treno').innerHTML = numTreno;
