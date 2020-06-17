@@ -23,6 +23,19 @@ div label{
   text-align: center;
 }
 
+#form{
+  text-align: center;
+}
+
+#form input{
+  text-align: center;
+}
+
+#form #genere{
+  width: 165px;
+  padding-left: 2.5%;
+}
+
 #output{
   width: 70%;
   margin: auto;
