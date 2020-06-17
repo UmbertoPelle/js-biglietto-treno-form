@@ -2,12 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Biglietto treno</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
     <!--INput -->
-    <div>
+    <div id=input>
       <div>
         <label for="name">Name:</label>
         <input id="name" type="text" name="name" value="">
@@ -17,6 +18,7 @@
         <input id="km" type="number" name="name" value="">
       </div>
       <div>
+        <label for="genere">Scegli la tua categiria:</label>
         <select id="genere" name="genere">
           <option value="maggiorenne">Maggiorenne</option>
           <option value="minorenne">Minorenne</option>
@@ -28,9 +30,31 @@
     </div>
 
     <!--OUTput -->
-    <div>
-      <div id="prezzoScontato"></div>
+    <div id=output class="hidden">
 
+      <div class="contenuto">
+        <div>
+          <strong>Passeggero:</strong>
+          <div id="outPutNome"></div>
+        </div>
+        <div>
+          <strong>N treno:</strong>
+          <div id="treno">
+        </div>
+        </div>
+        <div>
+          <strong>Carrozza:</strong>
+          <div id="carrozza"></div>
+        </div>
+        <div>
+          <strong>Costo:</strong>
+          <div id="prezzo"></div>
+        </div>
+        <div>
+          <strong>Categoria:</strong>
+          <div id="categoria"></div>
+        </div>
+      </div>
     </div>
 
 

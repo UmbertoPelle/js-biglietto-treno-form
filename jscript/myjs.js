@@ -14,11 +14,20 @@ btnCrea.addEventListener("click", function () {
 
   if (genere == "minorenne") {
     bigliettoScontato = ((prezzoBiglietto * 80)/ 100);
-    document.getElementById('prezzoScontato').innerHTML = "il tuo biglietto costa " + bigliettoScontato.toFixed(2) + "€"
+    document.getElementById('prezzo').innerHTML = bigliettoScontato.toFixed(2) + "€";
   }else if (genere == "over65") {
-    bigliettoScontato = ((costoBiglietto * 60)/ 100);
-    document.getElementById('prezzoScontato').innerHTML = "il tuo biglietto costa " + bigliettoScontato.toFixed(2) + "€"
+    bigliettoScontato = ((prezzoBiglietto * 60)/ 100);
+    document.getElementById('prezzo').innerHTML = bigliettoScontato.toFixed(2) + "€";
   }else {
-    document.getElementById('prezzoScontato').innerHTML = "il tuo biglietto costa " + prezzoBiglietto.toFixed(2) + "€"
+    document.getElementById('prezzo').innerHTML = prezzoBiglietto.toFixed(2) + "€";
   }
+
+  var carrozza = Math.floor(Math.random()*10)+ 1;
+  var numTreno = Math.floor(Math.random() * (1000 - 700) + 700);
+  document.getElementById('outPutNome').innerHTML = name;
+  document.getElementById('categoria').innerHTML = genere;
+  document.getElementById('carrozza').innerHTML = carrozza;
+  document.getElementById('treno').innerHTML = numTreno;
+
+  document.getElementById('output').className = "show";
 });

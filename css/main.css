@@ -1,0 +1,28 @@
+body{
+  background-color: lightblue;
+}
+
+#output{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+.contenuto{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hidden{
+  opacity: 0;
+  transition: 1s;
+}
+
+.show{
+  opacity: 1;
+  transition: 1s;
+}
