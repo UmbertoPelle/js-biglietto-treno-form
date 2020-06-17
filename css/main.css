@@ -17,6 +17,10 @@ body{
   justify-content: space-around;
 }
 
+.contenuto strong{
+  color: red;
+}
+
 .hidden{
   opacity: 0;
   transition: 1s;
