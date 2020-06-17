@@ -5,7 +5,7 @@ var prezzoBiglietto;
 var bigliettoScontato;
 var genere = document.getElementById('genere').value;
 var btnCrea = document.getElementById('creaBiglietto');
-var btnAnnulla = document.getElementById('annullaBiglietto');
+var btnAnnulla = document.getElementById('annulla');
 
 btnCrea.addEventListener("click", function () {
   name = document.getElementById('name').value;
@@ -30,4 +30,15 @@ btnCrea.addEventListener("click", function () {
   document.getElementById('treno').innerHTML = numTreno;
 
   document.getElementById('output').className = "show";
+});
+
+btnAnnulla.addEventListener("click", function () {
+
+  document.getElementById('output').className = "hidden";
+
+  document.getElementById('name').value = "";
+  document.getElementById('km').value = "";
+  document.getElementById('genere').value = "maggiorenne";
+
+
 });
