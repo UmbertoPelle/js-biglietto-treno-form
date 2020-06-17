@@ -3,11 +3,11 @@ var eta;
 var km;
 var prezzoBiglietto;
 var bigliettoScontato;
-var genere = document.getElementById('genere').value;
 var btnCrea = document.getElementById('creaBiglietto');
 var btnAnnulla = document.getElementById('annulla');
 
 btnCrea.addEventListener("click", function () {
+  var genere = document.getElementById('genere').value;
   name = document.getElementById('name').value;
   km = document.getElementById('km').value;
   prezzoBiglietto = km * 0.21;
